@@ -22,7 +22,7 @@ docker-compose down
 Mantive o .env por não conter informações sensiveis nesse caso especifico e pra facilitar na hora de rodar o projeto, não é o correto, porém para facilitar ao testarem resolvi deixar.
 
 ### Pontos que gostaria de adicioar
-[] Talvez ao ver que a url esta expirada exluí-la
+[] Talvez ao ver que a url esta expirada excluí-la
 
 [] Ao mandar uma url já existente apenas atualizar o tempo de expiração (gerar ou não outra url?)
 
