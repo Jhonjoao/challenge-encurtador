@@ -1,25 +1,20 @@
 import { Router } from 'express';
-import { getRepository } from 'typeorm';
-
-import Urls from '../models/Urls';
+import GetUrlService from '../services/GetUrlService';
 
 const redirecionadorRoutes = Router();
 
-redirecionadorRoutes.post('/:param_url', async (request, response) => {
-    const urlRepository = getRepository(Urls);
-    const { param_url } = request.params;
+redirecionadorRoutes.get('/:param_url', async (request, response) => {
+    try{
+        const { param_url } = request.params;
 
-    console.log(await urlRepository.find())
-
-    const url_redirect = await urlRepository.findOne({
-        where: { param_url }
-    })
-
-    if(!url_redirect){
-        return response.status(404).send();
+        const getUrl = new GetUrlService();
+        const url_redirect = await getUrl.execute({ param_url })
+    
+        return response.redirect(url_redirect.url)
+    } catch(err){
+        return response.status(404).json({ error: err.message });
     }
-
-    return response.redirect(url_redirect.url)
+   
 });
 
 export default redirecionadorRoutes;

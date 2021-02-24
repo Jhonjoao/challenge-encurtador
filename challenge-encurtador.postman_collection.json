@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "f642000e-6135-400c-b173-5d2ca39abd15",
+		"name": "challenge-encurtador",
+		"description": "Encurtador de URLs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Redirecionar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/81973d0fe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"81973d0fe"
+					]
+				},
+				"description": "Redireciona para a url salva no bando de dados, se não existe ou expirada retorna 404"
+			},
+			"response": []
+		},
+		{
+			"name": "Criar link",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"url\": \"https://wisereducacao.com/\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/encurtador/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"encurtador",
+						""
+					]
+				},
+				"description": "Envia a url que desejar encurtar no body e retorna uma newUrl contendo a url de redirecionamento"
+			},
+			"response": []
+		}
+	]
+}
