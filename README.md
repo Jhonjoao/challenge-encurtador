@@ -15,15 +15,15 @@ Lembrando que é necessário ter o docker e o yarn npm, se quiser optar por roda
 4- yarn dev:server
 
 
-Na hora de feinalizar não esqueça de encerrar o container:
+Na hora de finalizar não esqueça de encerrar o container:
 docker-compose down
 
 
 Mantive o .env por não conter informações sensiveis nesse caso especifico e pra facilitar na hora de rodar o projeto, não é o correto, porém para facilitar ao testarem resolvi deixar.
 
 ### Pontos que gostaria de adicioar
-[] Talvez ao ver que a url esta expirada exluí-la
+[ ] Talvez ao ver que a url esta expirada exluí-la
 
-[] Ao mandar uma url já existente apenas atualizar o tempo de expiração (gerar ou não outra url?)
+[ ] Ao mandar uma url já existente apenas atualizar o tempo de expiração (gerar ou não outra url?)
 
-[] Testar mais fuções dentro dos testes automatizados
+[ ] Testar mais fuções dentro dos testes automatizados
