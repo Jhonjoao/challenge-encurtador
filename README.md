@@ -6,6 +6,8 @@ Api que encurta urls e as salva no banco de dados, essa urls possuem um tempo de
 ## Projeto em produção
 link: https://challenge-encurtador.herokuapp.com/
 
+![Video Example](https://raw.githubusercontent.com/Jhonjoao/challenge-encurtador/main/example-encurtator.gif)
+
 Projeto publicado no link, caso demore para responder aguardar um pouco, tem relação com o heroku.
 
 ### Para rodar o projeto:
