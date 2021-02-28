@@ -3,6 +3,11 @@
 ## Como funciona o projeto:
 Api que encurta urls e as salva no banco de dados, essa urls possuem um tempo de expiração. Quando a url gerada é requisitada voce sera redirecionado para a url completa.
 
+## Projeto em produção
+link: https://challenge-encurtador.herokuapp.com/
+
+Projeto publicado no link, caso demore para responder aguardar um pouco, tem relação com o heroku.
+
 ### Para rodar o projeto:
 Lembrando que é necessário ter o docker e o yarn npm, se quiser optar por rodar por outro meio alterar as configurações dentro do arquivo 'ormconfig.js'
 
