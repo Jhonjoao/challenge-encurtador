@@ -14,14 +14,16 @@ class GetUrlService {
             where: { param_url }
         })
 
+        if(!url_redirect){
+            throw new Error('This URL not exist');
+        }
+
         const now = new Date();
         if(now > url_redirect.expires_at){
             throw new Error('Expired URL.');
         }
 
-        if(!url_redirect){
-            throw new Error('This URL not exist');
-        }
+        
 
         return url_redirect
     }
